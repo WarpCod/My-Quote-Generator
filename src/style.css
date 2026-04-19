@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at center, #0a0a0f, #000000);
+  font-family: "Courier New", Courier, monospace;
+  color: #00f7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Карточка */
+.card {
+  background: rgba(10, 10, 20, 0.9);
+  border: 2px solid #6a00ff;
+  box-shadow:
+    0 0 10px #6a00ff,
+    0 0 20px #6a00ff,
+    inset 0 0 10px rgba(106, 0, 255, 0.5);
+  border-radius: 12px;
+  padding: 30px;
+  width: 320px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+/* Текст */
+#quote {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  text-shadow: 0 0 5px #00f7ff;
+}
+
+/* Кнопка */
+button {
+  background: transparent;
+  border: 1px solid #00f7ff;
+  color: #00f7ff;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 5px #00f7ff;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #00f7ff;
+  color: #000;
+  box-shadow: 0 0 15px #00f7ff;
+}
+
+/* Анимация тряски */
+@keyframes shake {
+  0% { transform: translate(0px, 0px); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(2px, -2px); }
+  60% { transform: translate(-2px, 1px); }
+  80% { transform: translate(2px, 1px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+.shake {
+  animation: shake 0.5s;
+}
